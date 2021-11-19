@@ -1,17 +1,9 @@
-@use '../variables/colors';
-@use '../variables/screen';
+@use '../abstracts/colors';
+@use '../abstracts/screen';
 
 .como-participar {
     color: colors.$branco;
-    padding: 6rem 0;
-
     
-
-    &__descricao {
-        width: 40%;
-        line-height: 30px;
-    }
-
     &__img {
         width: 500px;
         height: 400px;

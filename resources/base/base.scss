@@ -1,5 +1,5 @@
-@use '../variables/fonts';
-@use '../variables/colors';
+@use '../abstracts/fonts';
+@use '../abstracts/colors';
 
 body, html {
     font-family: BrandonLight;
@@ -31,8 +31,13 @@ h1, h2, h3 {
 
 .titulo {
     color: colors.$branco;
+
     &--banner {
         font-size: 4rem;
+    }
+
+    &--destaque {
+        color: colors.$laranja;
     }
 }
 

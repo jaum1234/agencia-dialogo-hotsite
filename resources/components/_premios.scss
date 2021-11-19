@@ -1,6 +1,28 @@
-@use '../variables/screen';
+@use '../abstracts/screen';
 
 .premio {
+
+    &__img {
+        object-fit: cover;
+        object-position: right top;
+        width: 25rem;
+        height: 17rem;
+        margin-bottom: 0.5rem;
+
+        @include screen.for-mobile {
+            margin-right: 0 !important;
+            margin-left: 0 !important;
+        }
+
+        &--tenis {
+            object-position: 50% 60%;
+        }
+
+        &--lower {
+            object-position: 50% 95%;
+        }
+    }
+
     @include screen.for-mobile {
         align-items: center !important;
         margin-left: 0 !important;

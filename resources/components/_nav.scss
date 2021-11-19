@@ -1,6 +1,6 @@
-@use '../variables/colors';
-@use '../variables/fonts';
-@use '../variables/screen';
+@use '../abstracts/colors';
+@use '../abstracts/fonts';
+@use '../abstracts/screen';
 
 .nav {
     @include screen.for-mobile {
