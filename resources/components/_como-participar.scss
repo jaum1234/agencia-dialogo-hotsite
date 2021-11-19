@@ -2,23 +2,14 @@
 @use '../variables/screen';
 
 .como-participar {
-    background-color: colors.$pretoClaro;
     color: colors.$branco;
     padding: 6rem 0;
 
-    &__titulo {
-        
-        font-family: fontDoVitorBlack;
-    }
+    
 
     &__descricao {
         width: 40%;
         line-height: 30px;
-
-        @include screen.for-mobile {
-            width: 100%;
-            margin: 2rem 1rem 0 1rem;
-        }
     }
 
     &__img {
@@ -27,9 +18,10 @@
         object-fit: cover;
 
         @include screen.for-mobile {
-            width: 80%;
-            margin: 0 !important;
-            justify-content: center !important;
+            width: 100%;
+            margin-right: 0 !important;
+            margin-left: 0 !important;
+            margin-bottom: 3rem;
         }
     }
 }

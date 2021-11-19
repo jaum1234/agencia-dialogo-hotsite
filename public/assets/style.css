@@ -4,30 +4,30 @@
 }
 
 @font-face {
-  font-family: fontDoVitorLight;
+  font-family: BrandonLight;
   src: url(fonts/brandon/brandon-grotesque-light-58a8a4b38001d.otf);
 }
 @font-face {
-  font-family: fontDoVitorBlack;
+  font-family: BrandonBlack;
   src: url(fonts/brandon/brandon-grotesque-black-58a8a3e824392.otf);
 }
 .nav {
   padding: 0.2rem 10rem !important;
   background-color: #1a1b1d;
 }
-@media screen and (max-width: 1008px) {
+@media screen and (min-width: 378px) and (max-width: 1008px) {
   .nav {
-    padding: 0 5rem !important;
+    padding: 0 2rem !important;
   }
 }
 .nav__link {
   color: #FEFEFE !important;
-  font-family: fontDoVitorLight;
+  font-family: BrandonLight;
 }
 .nav__link:hover {
   color: #adadad !important;
 }
-@media screen and (max-width: 1008px) {
+@media screen and (min-width: 378px) and (max-width: 1008px) {
   .nav__lista--redes-sociais {
     flex-direction: row !important;
   }
@@ -37,22 +37,46 @@
 }
 
 body, html {
-  font-family: FontDoVitorLight;
+  font-family: BrandonLight;
   height: 100%;
 }
 
-.chamada {
+h1, h2, h3 {
+  font-family: BrandonBlack;
+}
+
+.container--black {
+  background-color: #1a1b1d;
+}
+
+.container--banner {
   background-image: url("../../public/assets/img/quadra.png");
+  background-position: 50% 5%;
   height: 100%;
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 10rem 0;
+}
+
+.bloco--conteudo {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.titulo {
+  color: #FEFEFE;
+}
+.titulo--banner {
+  font-size: 4rem;
+}
+
+.chamada {
   padding-top: 10rem;
   padding-bottom: 10rem;
 }
 .chamada__texto {
   color: white;
-  font-family: fontDoVitorBlack;
+  font-family: BrandonBlack;
   font-weight: bold;
   font-size: 5rem;
 }
@@ -65,38 +89,32 @@ body, html {
 }
 
 .como-participar {
-  background-color: #1a1b1d;
   color: #FEFEFE;
   padding: 6rem 0;
-}
-.como-participar__titulo {
-  font-family: fontDoVitorBlack;
 }
 .como-participar__descricao {
   width: 40%;
   line-height: 30px;
-}
-@media screen and (max-width: 1008px) {
-  .como-participar__descricao {
-    width: 100%;
-    margin: 2rem 1rem 0 1rem;
-  }
 }
 .como-participar__img {
   width: 500px;
   height: 400px;
   object-fit: cover;
 }
-@media screen and (max-width: 1008px) {
+@media screen and (min-width: 378px) and (max-width: 1008px) {
   .como-participar__img {
-    width: 80%;
-    margin: 0 !important;
-    justify-content: center !important;
+    width: 100%;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    margin-bottom: 3rem;
   }
 }
 
-.card__box {
-  margin: 0 2rem 2rem 2rem;
+@media screen and (min-width: 378px) and (max-width: 1008px) {
+  .card__box {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 .card__img {
   object-fit: cover;
@@ -105,6 +123,12 @@ body, html {
   height: 17rem;
   margin-bottom: 0.5rem;
 }
+@media screen and (min-width: 378px) and (max-width: 1008px) {
+  .card__img {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+}
 .card__img--tenis {
   object-position: 50% 60%;
 }
@@ -112,47 +136,31 @@ body, html {
   object-position: 50% 95%;
 }
 
-.projeto {
-  padding: 6rem 0;
-}
-.projeto__descricao {
-  width: 35%;
-  line-height: 35px;
-}
-@media screen and (max-width: 1008px) {
-  .projeto__descricao {
-    text-align: center;
-    width: 100%;
-    margin-bottom: 3rem;
-    margin-right: 0 !important;
-    margin-left: 0 !important;
-  }
-}
 .projeto__destaque {
   font-weight: bold;
   font-style: italic;
-}
-.projeto__titulo {
-  font-family: fontDoVitorBlack;
 }
 .projeto__img {
   width: 500px;
   height: 400px;
   object-fit: cover;
 }
-@media screen and (max-width: 1008px) {
+@media screen and (min-width: 378px) and (max-width: 1008px) {
   .projeto__img {
     width: 100%;
+    margin-top: 3rem;
     margin-right: 0 !important;
     margin-left: 0 !important;
   }
 }
 
-.premios {
-  padding: 6rem 0;
-}
-.premios__titulo {
-  font-family: fontDoVitorBlack;
+@media screen and (min-width: 378px) and (max-width: 1008px) {
+  .premio {
+    align-items: center !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 2.5rem !important;
+  }
 }
 
 .rodape {

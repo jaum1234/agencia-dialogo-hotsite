@@ -1,6 +1,12 @@
+@use '../variables/screen';
+
 .card {
     &__box {
-        margin: 0 2rem 2rem 2rem;
+
+        @include screen.for-mobile {
+            margin-left: 0;
+            margin-right: 0;
+        }
     }
 
     &__img {
@@ -9,6 +15,11 @@
         width: 25rem;
         height: 17rem;
         margin-bottom: 0.5rem;
+
+        @include screen.for-mobile {
+            margin-right: 0 !important;
+            margin-left: 0 !important;
+        }
 
         &--tenis {
             object-position: 50% 60%;

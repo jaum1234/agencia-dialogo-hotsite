@@ -1,7 +1,39 @@
 @use '../variables/fonts';
+@use '../variables/colors';
 
 body, html {
-    font-family: FontDoVitorLight;
+    font-family: BrandonLight;
     height: 100%;
 }
+
+h1, h2, h3 {
+    font-family: BrandonBlack;
+}
+
+.container--black {
+    background-color: colors.$pretoClaro;
+
+}
+
+.container--banner {
+    background-image: url('../../public/assets/img/quadra.png');
+    background-position: 50% 5%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10rem 0;
+}
+
+.bloco--conteudo {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.titulo {
+    color: colors.$branco;
+    &--banner {
+        font-size: 4rem;
+    }
+}
+
 

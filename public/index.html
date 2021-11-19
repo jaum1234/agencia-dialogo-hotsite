@@ -45,9 +45,9 @@
         </div>
     </nav>
     <main>
-        <div class="chamada">
-            <div class="chamada__bloco">
-                <h2 class="text-center chamada__texto" id="titulo">
+        <div class="container--fluid container--banner">
+            <div class="">
+                <h2 class="text-center titulo titulo--banner" id="titulo">
                     JOGOU, ESCANEOU, <br> <span class="chamada__texto--destaque">GANHOU!</span>
                 </h2>
             </div>
@@ -55,54 +55,61 @@
                 <div class="w-50 border-bottom"></div>
             </div>
         </div>
-        <div class="projeto container d-flex flex-wrap justify-content-center" id="projeto">
-            <div class="projeto__descricao">
-                <h3 class="fs-2 mb-4 projeto__titulo">
-                    PROJETO
-                </h3>
-                <p class="fs-5">
-                    A Nike fechou uma parceria com o jogador de basquete norte-americano <span class="projeto__destaque">Kevin Durant</span>, em que haverão algumas peças da marca autografadas por ele! Foram distribuídos vários <span class="projeto__destaque">QR Codes</span> por diversas quadras de São Paulo, em que alguns serão premiados!
-                </p>
-                <p class="fs-5">
-                    A iniciativa do projeto tem como base o <span class="projeto__destaque">incentivo</span> à prática de esportes, voltado ao basquete, além de reforçar o uso de quadras públicas espalhadas pela cidade de São Paulo.
-                </p>
+        <div class="container bloco--conteudo" id="projeto">
+            <div class="row">
+                <div class="col-lg">
+                    <h3 class="fs-2 mb-4">
+                        PROJETO
+                    </h3>
+                    <p class="fs-5">
+                        A Nike fechou uma parceria com o jogador de basquete norte-americano <span class="projeto__destaque">Kevin Durant</span>, em que haverão algumas peças da marca autografadas por ele! Foram distribuídos vários <span class="projeto__destaque">QR Codes</span> por diversas quadras de São Paulo, em que alguns serão premiados!
+                    </p>
+                    <p class="fs-5">
+                        A iniciativa do projeto tem como base o <span class="projeto__destaque">incentivo</span> à prática de esportes, voltado ao basquete, além de reforçar o uso de quadras públicas espalhadas pela cidade de São Paulo.
+                    </p>
+                </div>
+                <div class="col-lg d-flex justify-content-end">
+                    <img class="projeto__img" src="../public/assets/img/kevin-durant.jpg" alt="Foto do Kevin Durant segurando uma bola de basquete.">
+                </div>
             </div>
-            <img class="projeto__img ms-4" src="../public/assets/img/kevin-durant.jpg" alt="Foto do Kevin Durant segurando uma bola de basquete.">
         </div>
-        <div class="como-participar " id="como-participar">
-            <div class="d-flex justify-content-center flex-wrap align-items-center">
-                <img class="como-participar__img me-5" src="../public/assets/img/qrcode.jpg" alt="">
-                <div class="text-start como-participar__descricao ">
-                    <h3 class="text-light fs-2 mb-4 como-participar__titulo">COMO PARTICIPAR ?</h3>
+        <div class="container-fluid container--black bloco--conteudo" id="como-participar">
+            <div class="row align-items-center">
+                <div class="col-lg d-flex justify-content-center">
+                    <img class="como-participar__img" src="../public/assets/img/qrcode.jpg" alt="">
+                </div>
+                <div class="col-lg text-start">
+                    <h3 class="text-light fs-2 mb-4">COMO PARTICIPAR ?</h3>
                     <ol class="ps-4 fs-5">
-                        <li class="mb-3">Visite as quadras de São Paulo e procure por algum QR Code</li>
-                        <li class="mb-3">Aponte a câmera para o QR Code para escaneá-lo</li>
-                        <li class="mb-3">Uma página na web será aberta, preencha com seus dados</li>
-                        <li class="mb-3">Após isso, torça para ser o premiado!</li>
+                        <li class="text-light mb-3">Visite as quadras de São Paulo e procure por algum QR Code</li>
+                        <li class="text-light mb-3">Aponte a câmera para o QR Code para escaneá-lo</li>
+                        <li class="text-light mb-3">Uma página na web será aberta, preencha com seus dados</li>
+                        <li class="text-light mb-3">Após isso, torça para ser o premiado!</li>
                     </ol>
                 </div>
             </div>
         </div>
-        <div class="premios" id="premios">
-            <h3 class="fs-2 text-center premios__titulo mb-5">PRÊMIOS</h3>
-            <div class="d-flex flex-wrap justify-content-center">
-                <div>
-                    <div class="card__box">
-                        <img class="card__img card__img--tenis" src="../public/assets/img/tenis.png" alt="">
+        <div class="container bloco--conteudo" id="premios">
+            <h3 class="fs-2 text-center mb-5">PRÊMIOS</h3>
+            <div>
+                <div class="row">
+                    <div class="col-sm mb-5 me-4 d-flex flex-column align-items-end premio">
+                        <img class="card__img img-fluid card__img--tenis" src="../public/assets/img/tenis.png" alt="">
                         <div>Tenis assinado por Kevin Durant</div>
                     </div>
-                    <div class="card__box">
-                        <img class="card__img" src="../public/assets/img/corta-vento.png" alt="">
+                    <div class="col-sm mb-5 ms-4 d-flex flex-column align-items-start premio">
+                        <img class="card__img img-fluid card__img" src="../public/assets/img/corta-vento.png" alt="">
                         <div>Corta-vento branco assinado por Kevin Durant</div>
                     </div>
                 </div>
-                <div>
-                    <div class="card__box">
-                        <img class="card__img card__img--lower" src="../public/assets/img/corta-vento-preto.png" alt="">
+        
+                <div class="row">
+                    <div class="col-sm d-flex me-4 flex-column align-items-end premio">
+                        <img class="card__img img-fluid card__img--lower" src="../public/assets/img/corta-vento-preto.png" alt="">
                         <div>Corta-vento preto assinado por Kevin Durant</div>
                     </div>
-                    <div class="card__box">
-                        <img class="card__img" src="../public/assets/img/bola.png" alt="">
+                    <div class="col-sm d-flex ms-4 flex-column align-items-start premio">
+                        <img class="card__img img-fluid" src="../public/assets/img/bola.png" alt="">
                         <div>Bola assinada por Kevin Durant</div>
                     </div>
                 </div>
