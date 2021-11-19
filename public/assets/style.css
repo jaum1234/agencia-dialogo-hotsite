@@ -15,12 +15,22 @@
   padding: 0.2rem 10rem !important;
   background-color: #1a1b1d;
 }
+@media screen and (max-width: 1008px) {
+  .nav {
+    padding: 0 5rem !important;
+  }
+}
 .nav__link {
   color: #FEFEFE !important;
   font-family: fontDoVitorLight;
 }
 .nav__link:hover {
   color: #adadad !important;
+}
+@media screen and (max-width: 1008px) {
+  .nav__lista--redes-sociais {
+    flex-direction: row !important;
+  }
 }
 .nav__logo {
   height: 60px;
@@ -66,10 +76,23 @@ body, html {
   width: 40%;
   line-height: 30px;
 }
+@media screen and (max-width: 1008px) {
+  .como-participar__descricao {
+    width: 100%;
+    margin: 2rem 1rem 0 1rem;
+  }
+}
 .como-participar__img {
   width: 500px;
   height: 400px;
   object-fit: cover;
+}
+@media screen and (max-width: 1008px) {
+  .como-participar__img {
+    width: 80%;
+    margin: 0 !important;
+    justify-content: center !important;
+  }
 }
 
 .card__box {
@@ -96,6 +119,15 @@ body, html {
   width: 35%;
   line-height: 35px;
 }
+@media screen and (max-width: 1008px) {
+  .projeto__descricao {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 3rem;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+}
 .projeto__destaque {
   font-weight: bold;
   font-style: italic;
@@ -107,6 +139,13 @@ body, html {
   width: 500px;
   height: 400px;
   object-fit: cover;
+}
+@media screen and (max-width: 1008px) {
+  .projeto__img {
+    width: 100%;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
 }
 
 .premios {

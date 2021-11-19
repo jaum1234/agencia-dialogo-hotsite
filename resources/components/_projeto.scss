@@ -1,9 +1,19 @@
+@use '../variables/screen';
+
 .projeto {
     padding: 6rem 0;
 
     &__descricao {
         width: 35%;
         line-height: 35px;
+
+        @include screen.for-mobile {
+            text-align: center;
+            width: 100%;
+            margin-bottom: 3rem;
+            margin-right: 0 !important;
+            margin-left: 0 !important;
+        }
     }
 
     &__destaque {
@@ -19,5 +29,11 @@
         width: 500px;
         height: 400px;
         object-fit: cover;
+
+        @include screen.for-mobile {
+            width: 100%;
+            margin-right: 0 !important;
+            margin-left: 0 !important;
+        }
     }
 }

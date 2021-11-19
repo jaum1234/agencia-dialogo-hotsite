@@ -1,7 +1,11 @@
 @use '../variables/colors';
 @use '../variables/fonts';
+@use '../variables/screen';
 
 .nav {
+    @include screen.for-mobile {
+        padding: 0 5rem !important;
+    }
 
     padding: 0.2rem 10rem !important;
     background-color: colors.$pretoClaro;
@@ -13,6 +17,15 @@
 
         &:hover {
             color: colors.$brancoHover !important;
+        }
+    }
+
+    &__lista {
+        &--redes-sociais {
+            @include screen.for-mobile {
+                
+                flex-direction: row !important;
+            }
         }
     }
     
