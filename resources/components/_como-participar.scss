@@ -1,0 +1,23 @@
+@use '../variables/colors';
+
+.como-participar {
+    background-color: colors.$pretoClaro;
+    color: colors.$branco;
+    padding: 6rem 0;
+
+    &__titulo {
+        
+        font-family: fontDoVitorBlack;
+    }
+
+    &__descricao {
+        width: 40%;
+        line-height: 30px;
+    }
+
+    &__img {
+        width: 500px;
+        height: 400px;
+        object-fit: cover;
+    }
+}

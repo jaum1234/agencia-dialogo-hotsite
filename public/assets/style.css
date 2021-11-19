@@ -1,0 +1,123 @@
+.banner__img {
+  height: 500px;
+  object-fit: cover;
+}
+
+@font-face {
+  font-family: fontDoVitorLight;
+  src: url(fonts/brandon/brandon-grotesque-light-58a8a4b38001d.otf);
+}
+@font-face {
+  font-family: fontDoVitorBlack;
+  src: url(fonts/brandon/brandon-grotesque-black-58a8a3e824392.otf);
+}
+.nav {
+  padding: 0.2rem 10rem !important;
+  background-color: #1a1b1d;
+}
+.nav__link {
+  color: #FEFEFE !important;
+  font-family: fontDoVitorLight;
+}
+.nav__link:hover {
+  color: #adadad !important;
+}
+.nav__logo {
+  height: 60px;
+}
+
+body, html {
+  font-family: FontDoVitorLight;
+  height: 100%;
+}
+
+.chamada {
+  background-image: url("../../public/assets/img/quadra.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+.chamada__texto {
+  color: white;
+  font-family: fontDoVitorBlack;
+  font-weight: bold;
+  font-size: 5rem;
+}
+.chamada__texto--destaque {
+  color: #f7941d;
+}
+.chamada__img {
+  margin: 0 0;
+  width: 100%;
+}
+
+.como-participar {
+  background-color: #1a1b1d;
+  color: #FEFEFE;
+  padding: 6rem 0;
+}
+.como-participar__titulo {
+  font-family: fontDoVitorBlack;
+}
+.como-participar__descricao {
+  width: 40%;
+  line-height: 30px;
+}
+.como-participar__img {
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.card__box {
+  margin: 0 2rem 2rem 2rem;
+}
+.card__img {
+  object-fit: cover;
+  object-position: right top;
+  width: 25rem;
+  height: 17rem;
+  margin-bottom: 0.5rem;
+}
+.card__img--tenis {
+  object-position: 50% 60%;
+}
+.card__img--lower {
+  object-position: 50% 95%;
+}
+
+.projeto {
+  padding: 6rem 0;
+}
+.projeto__descricao {
+  width: 35%;
+  line-height: 35px;
+}
+.projeto__destaque {
+  font-weight: bold;
+  font-style: italic;
+}
+.projeto__titulo {
+  font-family: fontDoVitorBlack;
+}
+.projeto__img {
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.premios {
+  padding: 6rem 0;
+}
+.premios__titulo {
+  font-family: fontDoVitorBlack;
+}
+
+.rodape {
+  background-color: #1a1b1d;
+}
+
+/*# sourceMappingURL=style.css.map */

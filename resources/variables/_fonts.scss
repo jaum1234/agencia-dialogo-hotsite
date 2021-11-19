@@ -1,0 +1,15 @@
+@font-face {
+    font-family: fontDoVitorLight;
+    src: url(fonts/brandon/brandon-grotesque-light-58a8a4b38001d.otf);
+}
+
+@font-face {
+    font-family: fontDoVitorBlack;
+    src: url(fonts/brandon/brandon-grotesque-black-58a8a3e824392.otf);
+}
+
+@mixin defaultFont($weight: 400) {
+    font-family: fontDoVitorBlack;
+    font-style: normal;
+    font-weight: $weight;
+}

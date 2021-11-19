@@ -1,0 +1,22 @@
+@use '../variables/colors';
+@use '../variables/fonts';
+
+.nav {
+
+    padding: 0.2rem 10rem !important;
+    background-color: colors.$pretoClaro;
+
+    &__link {
+        color: colors.$branco !important;
+        font-family: fontDoVitorLight;
+
+
+        &:hover {
+            color: colors.$brancoHover !important;
+        }
+    }
+    
+    &__logo {
+        height: 60px; 
+    }
+}

@@ -1,0 +1,21 @@
+.card {
+    &__box {
+        margin: 0 2rem 2rem 2rem;
+    }
+
+    &__img {
+        object-fit: cover;
+        object-position: right top;
+        width: 25rem;
+        height: 17rem;
+        margin-bottom: 0.5rem;
+
+        &--tenis {
+            object-position: 50% 60%;
+        }
+
+        &--lower {
+            object-position: 50% 95%;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.projeto {
+    padding: 6rem 0;
+
+    &__descricao {
+        width: 35%;
+        line-height: 35px;
+    }
+
+    &__destaque {
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    &__titulo {
+        font-family: fontDoVitorBlack;
+    }
+
+    &__img {
+        width: 500px;
+        height: 400px;
+        object-fit: cover;
+    }
+}

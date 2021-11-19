@@ -1,0 +1,31 @@
+@use '../variables/colors';
+
+.chamada {
+    background-image: url('../../public/assets/img/quadra.png');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+
+    &__texto {
+        color: white;
+        font-family: fontDoVitorBlack;
+        font-weight: bold;
+        font-size: 5rem;
+        
+
+        &--destaque {
+            color: colors.$laranja;
+        }
+    }
+
+    &__img {
+        margin: 0 0;
+        width: 100%;
+
+    }
+
+    
+}
