@@ -78,7 +78,7 @@ h1, h2, h3 {
 }
 @media screen and (min-width: 378px) and (max-width: 1008px) {
   .como-participar__descricao {
-    margin-left: 2rem !important;
+    padding-left: 2rem !important;
   }
 }
 .como-participar__img {
@@ -115,7 +115,7 @@ h1, h2, h3 {
 
 @media screen and (min-width: 378px) and (max-width: 1008px) {
   .premio {
-    justify-content: center !important;
+    align-items: center !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
     margin-bottom: 2.5rem !important;
