@@ -18,8 +18,12 @@
             object-position: 50% 60%;
         }
 
+        &--low {
+            object-position: 50% 75%;
+        }
+
         &--lower {
-            object-position: 50% 95%;
+            object-position: 50% 100%;
         }
     }
 

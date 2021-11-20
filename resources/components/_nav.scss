@@ -28,6 +28,12 @@
             }
         }
     }
+
+    &__item {
+        @include screen.for-mobile {
+            margin-right: 1.5rem !important;
+        }
+    }
     
     &__logo {
         height: 60px; 

@@ -27,6 +27,11 @@
     flex-direction: row !important;
   }
 }
+@media screen and (min-width: 378px) and (max-width: 1008px) {
+  .nav__item {
+    margin-right: 1.5rem !important;
+  }
+}
 .nav__logo {
   height: 60px;
 }
@@ -119,8 +124,11 @@ h1, h2, h3 {
 .premio__img--tenis {
   object-position: 50% 60%;
 }
+.premio__img--low {
+  object-position: 50% 75%;
+}
 .premio__img--lower {
-  object-position: 50% 95%;
+  object-position: 50% 100%;
 }
 @media screen and (min-width: 378px) and (max-width: 1008px) {
   .premio {
