@@ -3,6 +3,12 @@
 
 .como-participar {
     color: colors.$branco;
+
+    &__descricao {
+        @include screen.for-mobile {
+            margin-left: 2rem !important;
+        }
+    }
     
     &__img {
         width: 500px;

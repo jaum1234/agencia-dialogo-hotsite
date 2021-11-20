@@ -76,6 +76,11 @@ h1, h2, h3 {
 .como-participar {
   color: #FEFEFE;
 }
+@media screen and (min-width: 378px) and (max-width: 1008px) {
+  .como-participar__descricao {
+    margin-left: 2rem !important;
+  }
+}
 .como-participar__img {
   width: 500px;
   height: 400px;
@@ -108,6 +113,14 @@ h1, h2, h3 {
   }
 }
 
+@media screen and (min-width: 378px) and (max-width: 1008px) {
+  .premio {
+    justify-content: center !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 2.5rem !important;
+  }
+}
 .premio__img {
   object-fit: cover;
   object-position: right top;
@@ -129,14 +142,6 @@ h1, h2, h3 {
 }
 .premio__img--lower {
   object-position: 50% 100%;
-}
-@media screen and (min-width: 378px) and (max-width: 1008px) {
-  .premio {
-    align-items: center !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    margin-bottom: 2.5rem !important;
-  }
 }
 
 .rodape {
