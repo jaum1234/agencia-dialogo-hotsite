@@ -9,30 +9,7 @@
         margin-bottom: 2.5rem !important;
     }
 
-    &__img {
-        object-fit: cover;
-        object-position: right top;
-        width: 25rem;
-        height: 17rem;
-        margin-bottom: 0.5rem;
-
-        @include screen.for-mobile {
-            margin-right: 0 !important;
-            margin-left: 0 !important;
-        }
-
-        &--tenis {
-            object-position: 50% 60%;
-        }
-
-        &--low {
-            object-position: 50% 75%;
-        }
-
-        &--lower {
-            object-position: 50% 100%;
-        }
-    }
+    
 
     
 }

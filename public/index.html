@@ -41,10 +41,10 @@
                         <a class="nav-link fs-5 nav__link" target="_blank" href="https://www.instagram.com/usjt.dialogo/"><i class="fab fa-instagram"></i></a>
                     </li>
                     <li class="nav-item me-2 nav__item">
-                        <a class="nav-link fs-5 nav__link" target="_blank" href="https://www.instagram.com/usjt.dialogo/"><i class="fab fa-twitter"></i></a>
+                        <a class="nav-link fs-5 nav__link" target="_blank" href="https://twitter.com/nikedialogo?s=11"><i class="fab fa-twitter"></i></a>
                     </li>
                     <li class="nav-item nav__item">
-                        <a class="nav-link fs-5 nav__link" target="_blank" href="https://www.instagram.com/usjt.dialogo/"><i class="fab fa-tiktok"></i></a>
+                        <a class="nav-link fs-5 nav__link" target="_blank" href="https://vm.tiktok.com/ZM8pAoyTF/"><i class="fab fa-tiktok"></i></a>
                     </li>
                 </ul>
             </div>
@@ -100,23 +100,31 @@
             <div>
                 <div class="row">
                     <div class="col-sm mb-5 me-4 d-flex flex-column align-items-end premio">
-                        <img class="premio__img img-fluid premio__img--tenis" src="../public/assets/img/tenis.png" alt="">
-                        <div>Tenis assinado por Kevin Durant</div>
+                        <div>
+                            <img class="premio__img img-fluid premio__img--tenis" src="../public/assets/img/tenis.png" alt="">
+                            <div class="text-center">Nike air jordan 1 mid red (tênis) assinado por Kevin Durant</div>
+                        </div>
                     </div>
                     <div class="col-sm mb-5 ms-4 d-flex flex-column align-items-start premio">
-                        <img class="premio__img img-fluid premio__img" src="../public/assets/img/corta-vento.png" alt="">
-                        <div>Corta-vento branco assinado por Kevin Durant</div>
+                        <div>
+                            <img class="premio__img img-fluid premio__img" src="../public/assets/img/corta-vento.png" alt="">
+                            <div class="text-center">Jaqueta nike sportswear windrunner amarelo <br> (corta branco)  assinado por Kevin Durant</div>
+                        </div>
                     </div>
                 </div>
         
                 <div class="row">
                     <div class="col-sm d-flex me-4 flex-column align-items-end premio">
-                        <img class="premio__img img-fluid premio__img--low" src="../public/assets/img/corta-vento-preto.png" alt="">
-                        <div>Corta-vento preto assinado por Kevin Durant</div>
+                        <div>
+                            <img class="premio__img img-fluid premio__img--low" src="../public/assets/img/corta-vento-preto.png" alt="">
+                            <div class="text-center">Jaqueta nike sportswear windrunner unissex <br> (corta vento preto e verde)  assinado por Kevin Durant</div>
+                        </div>
                     </div>
                     <div class="col-sm d-flex ms-4 flex-column align-items-start premio">
-                        <img class="premio__img premio__img--lower img-fluid" src="../public/assets/img/bola.png" alt="">
-                        <div>Bola assinada por Kevin Durant</div>
+                        <div>
+                            <img class="premio__img premio__img--lower img-fluid" src="../public/assets/img/bola.png" alt="">
+                            <div class="text-center">Bola assinada por Kevin Durant</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -126,10 +134,20 @@
         <div class="text-center text-light">Agencia Diálogo</div>
     </footer>
     <script>
-        document.querySelectorAll('.premio__img').forEach(function(el) {
+        /*
+            Esses estilos nao estavam sendo aplicados em produçao via CSS
+        */
+        document.querySelectorAll('.premio__img').forEach((el) => {
             el.style.width = '400px';
             el.style.height = '272px';
+            el.style.objectFit = 'cover';
+            el.style.marginBottom = '0.5rem';
+            el.style.objectPosition = 'right top';
         });
+
+        document.querySelector('.premio__img--lower').style.objectPosition = '50% 100%';
+        document.querySelector('.premio__img--low').style.objectPosition = '50% 75%';
+        document.querySelector('.premio__img--tenis').style.objectPosition = '50% 60%';
     </script>
 </body>
 </html>
