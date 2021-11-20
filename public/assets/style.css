@@ -124,8 +124,8 @@ h1, h2, h3 {
 .premio__img {
   object-fit: cover;
   object-position: right top;
-  width: 25rem;
-  height: 17rem;
+  width: 25rem !important;
+  height: 17rem !important;
   margin-bottom: 0.5rem;
 }
 @media screen and (min-width: 378px) and (max-width: 1008px) {
